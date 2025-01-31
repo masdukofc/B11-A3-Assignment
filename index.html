@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- CNDs -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent:'#179800',
+              hero_linear_1:"rgba(255, 255, 255, 1)",
+              hero_linear_2:"rgba(239, 235, 227, 1)"
+
+            }
+          }
+        }
+      }
+    </script>
+
+</head>
+<body>
+    <header>
+      <!-- Header -->
+      <div class="bg-gradient-to-r from-hero_linear_1 to-hero_linear_2">
+
+        <nav class="px-10 visible lg:border-hidden border border-accent">
+          <div class="flex p-2 items-center justify-between mb-2">
+            <!-- Logo main -->
+           <div class="hidden lg:flex visible">
+            <img class="lg:w-full h-full" src="./c2-assets/logo-header.png" alt="">
+        </div>
+            <!-- Logo mini -->
+           <div class="visible lg:hidden">
+            <img class="w-full" src="./c2-assets/Mini-header -logo.png" alt="">
+        </div>
+        <!-- Nav List -->
+        <div class="hidden lg:flex flex-1 justify-center">
+          <ul class="flex gap-5">
+            <li>Product</li>
+            <li>Services</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        
+        <!-- Icons -->
+        <div>
+          
+        </div>
+
+        <!-- Button and icons -->
+         <div class="hidden lg:flex items-center gap-4">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <button class="bg-none text-black outline outline-1 outline-accent rounded-xl py-1 px-4">Login</button>
+         <button class="bg-accent text-white rounded-xl py-1 px-4">Register</button>
+         </div>
+
+         <!-- Nav Icon -->
+          <div>
+            <i class="text-accent lg:hidden visible fa-solid fa-bars fa-lg"></i>
+          </div>
+          </div>
+        </nav>
+
+        <!-- Hero Container -->
+         <div class="grid justify-center mt-12">
+          <!-- Text Section -->
+         <div>
+          <h1 class="text-center text-5xl font-semibold">Freshness <span style="color: #179800;">You Can</span> <br>
+            <span style="color: #179800;">Count</span> On, Prices You’ll Love!</h1>
+            <br>
+                     <p class="text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+         </div>
+         <!-- Hero Image -->
+         <div class="justify-center">
+          <img class="w-100" src="./c2-assets/hero-vegetables.png" alt=""></div>
+         </div>
+
+      </div>
+
+    </header>
+</body>
+</html>
