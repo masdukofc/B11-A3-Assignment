@@ -14,20 +14,19 @@
           extend: {
             colors: {
               accent:'#179800',
+              secondary:'rgba(239, 235, 227, 1)',
               hero_linear_1:"rgba(255, 255, 255, 1)",
-              hero_linear_2:"rgba(239, 235, 227, 1)"
 
             }
           }
         }
       }
     </script>
-
 </head>
 <body>
     <header>
       <!-- Header -->
-      <div class="bg-gradient-to-r from-hero_linear_1 to-hero_linear_2">
+      <div class="bg-gradient-to-r from-hero_linear_1 to-secondary">
 
         <nav class="px-10 visible lg:border-hidden border border-accent">
           <div class="flex p-2 items-center justify-between mb-2">
@@ -85,5 +84,41 @@
       </div>
 
     </header>
+<main>
+<!-- Services -->
+
+<div class="grid justify-center mt-10">
+  <h2 class="text-4xl font-semibold text-accent">Services</h2>
+<br>
+
+<!-- Cards -->
+
+<div class="grid grid-cols-1 mb-12 gap-16 justify-center lg:flex">
+<!-- Card1 -->
+<div class="grid bg-secondary p-10 space-y-2 rounded-lg w-64 h-80 justify-center">
+  <img class="" src="./c2-assets/service.png" alt="">
+  <h3 class="text-xl font-semibold">24/7 Services </h3>
+  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+</div>
+
+<!-- Card2 -->
+<div class="grid bg-secondary p-10 space-y-2 rounded-lg w-64 h-80 justify-center">
+  <img class="" src="./c2-assets/service.png" alt="">
+  <h3 class="text-xl font-semibold">24/7 Services </h3>
+  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+</div>
+
+<!-- Card3 -->
+<div class="grid bg-secondary p-10 space-y-2 rounded-lg w-64 h-80 justify-center">
+  <img class="" src="./c2-assets/service.png" alt="">
+  <h3 class="text-xl font-semibold">24/7 Services </h3>
+  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+</div>
+</div>
+
+</div>
+
+</main>
+    
 </body>
 </html>
