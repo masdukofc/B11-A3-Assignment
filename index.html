@@ -8,21 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">    
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              accent:'#179800',
-              secondary:'rgba(239, 235, 227, 1)',
-              hero_linear_1:"rgba(255, 255, 255, 1)",
-              linear_2:'#53DB3A'
-
+              accent: '#179800',
+              secondary: 'rgba(239, 235, 227, 1)',
+              hero_linear_1: "rgba(255, 255, 255, 1)",
+              linear_2: '#53DB3A',
+              text:'#111111'
+            },
+            fontFamily: {
+              sora: ['Sora', 'sans-serif']
             }
           }
         }
       }
     </script>
+    
 </head>
 <body>
     <header>
@@ -68,10 +75,10 @@
          <div class="grid justify-center mt-12">
           <!-- Text Section -->
          <div>
-          <h1 class="text-center mx-1 text-5xl font-semibold">Freshness <span style="color: #179800;">You Can</span> <br>
+          <h1 class="text-center mx-1 text-5xl font-semibold text-#111111">Freshness <span style="color: #179800;">You Can</span> <br>
             <span style="color: #179800;">Count</span> On, Prices You’ll Love!</h1>
             <br>
-            <p class="text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <p class="text-center text-text">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
          </div>
          <!-- Hero Image -->
          <div class="justify-center">
@@ -79,7 +86,6 @@
          </div>
 
       </div>
-
     </header>
 <main>
 
@@ -95,22 +101,22 @@
 <!-- Card1 -->
 <div class="grid bg-secondary p-10 space-y-2 rounded-lg w-72 h-auto justify-center">
   <img class="mx-auto grid justify-center bg-white rounded-full p-4" src="./c2-assets/service.png" alt="">
-  <h3 class="text-xl font-semibold">24/7 Services</h3>
-  <p class="">Our vegetable shop is open 24/7, providing fresh, high-quality produce anytime. Enjoy convenient shopping with doorstep delivery or in-store pickup.</p>
+  <h3 class="text-xl font-semibold text-text">24/7 Services</h3>
+  <p class="text-text text-text">Our vegetable shop is open 24/7, providing fresh, high-quality produce anytime. Enjoy convenient shopping with doorstep delivery or in-store pickup.</p>
 </div>
 
 <!-- Card2 -->
 <div class="grid bg-secondary p-10 space-y-2 rounded-lg w-72 h-auto justify-center">
   <img class="mx-auto grid justify-center bg-white rounded-full p-4" src="./c2-assets/delivery.png" alt="">
-  <h3 class="text-xl font-semibold">Fast Delivery</h3>
-  <p class="">Our vegetable shop offers 24/7 service with fast delivery, ensuring you get fresh produce quickly. Shop anytime and enjoy doorstep delivery in no time!</p>
+  <h3 class="text-xl font-semibold text-text">Fast Delivery</h3>
+  <p class="text-text">Our vegetable shop offers 24/7 service with fast delivery, ensuring you get fresh produce quickly. Shop anytime and enjoy doorstep delivery in no time!</p>
 </div>
 
 <!-- Card3 -->
 <div class="grid bg-secondary p-10 space-y-2 rounded-lg w-72 h-auto justify-center">
     <img class="mx-auto grid justify-center bg-white rounded-full p-4" src="./c2-assets/healthy.png" alt="">
-  <h3 class="text-xl font-semibold">Healthy Products </h3>
-  <p class="">Our fast and healthy products offer fresh, nutritious options for a busy lifestyle. Enjoy quick, wholesome meals and snacks anytime.</p>
+  <h3 class="text-xl font-semibold text-text">Healthy Products </h3>
+  <p class="text-text">Our fast and healthy products offer fresh, nutritious options for a busy lifestyle. Enjoy quick, wholesome meals and snacks anytime.</p>
 </div>
 </div>
 
@@ -118,7 +124,6 @@
 
 
 <!-- Popular Products -->
-
 <div class="grid bg-secondary justify-around lg:flex py-5 items-center">
 <!-- Container -->
 <div class="flex justify-center">
@@ -338,7 +343,6 @@
 
 </div>
 
-
   <!-- Arrival & Offers -->
 <div class="grid justify-center m-5">
   <h1 class="text-4xl font-semibold text-accent">Arrival & Offers</h1>
@@ -382,4 +386,37 @@
 
 </main>
 </body>
+
+<footer>
+
+  <!-- Footer -->
+  <div class="grid justify-between text-start space-y-5 p-20 bg-accent text-white lg:flex lg:text-left">
+    <!-- logo -->
+    <div>
+      <img src="./c2-assets/logo-footer.png" alt="">
+      <p class="text-start">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+    </div>
+    <!-- Lines -->
+    <div>
+      <ul class=" space-y-2 lg:space-y-5">
+        <li>Product</li>
+        <li>Services</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <!-- Social -->
+    <div >
+      <p>Follow us</p>
+      <!-- Logos -->
+       <div class="flex gap-5 justify-start lg:justify-center" >
+<ul class="flex  lg: gap-5 justify-center">
+  <li><i class="fa-brands fa-facebook"></i></li>
+  <li><i class="fa-brands fa-instagram"></i></li>
+  <li><i class="fa-brands fa-linkedin"></i></li>
+  <li><i class="fa-brands fa-youtube"></i></li>
+</ul>
+       </div>
+    </div>
+  </div>
+</footer>
 </html>
